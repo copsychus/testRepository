@@ -13,7 +13,7 @@ width:100%;
     <div class="col-md-4" style="background-color:#D6EAF8">
       <h3 text-align="center">
       <span class="glyphicon glyphicon-lock"> </span>
-      Hello World </h3>
+      World World </h3>
       <form  name="formlogin" action="checklogin.php" method="POST" id="login" class="form-horizontal">
         <div class="form-group">
           <div class="col-sm-12">
