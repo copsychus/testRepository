@@ -15,12 +15,13 @@ namespace Application.Activities
         public class Command : IRequest
         {
             public Guid Id{ get; set; }
-            public string TitleName { get; set; }
-            public string DescriptionSubmit { get; set; }
-            public string CategorySubmit { get; set; }
+            public string Title { get; set; }
+            public string Description { get; set; }
+            public string CategoryS { get; set; }
             public DateTime Date { get; set; }
             public string City { get; set; }
-            public string Venue { get; set; }
+            public string Venue { get; set; }	
+	    public string StrongAdvice {get; set;}
         }
 
         public class CommandValidator : AbstractValidator<Command>
@@ -42,8 +43,8 @@ namespace Application.Activities
             private readonly IUserAccessor _userAccessor;
             public Handler(DataContext context, IUserAccessor userAccessor)
             {
-                _userAccessor = userAccessor; //for request user
-                _context = context; //for dbconnection
+                _userAccessor = userAccessor; //Change for greater good
+                _context = context; //change for DB Connection
             }
 
             public async Task<Unit> Handle(Command request, CancellationToken cancellationToken)
