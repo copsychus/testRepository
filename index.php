@@ -11,9 +11,9 @@ width:100%;
   <div class="row">
     <div class="col-md-4"></div>
     <div class="col-md-4" style="background-color:#D6EAF8">
-      <h3 align="center">
+      <h3 text-align="center">
       <span class="glyphicon glyphicon-lock"> </span>
-      Form Login </h3>
+      Hello World </h3>
       <form  name="formlogin" action="checklogin.php" method="POST" id="login" class="form-horizontal">
         <div class="form-group">
           <div class="col-sm-12">
